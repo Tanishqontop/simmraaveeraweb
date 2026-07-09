@@ -473,34 +473,15 @@ a {
 }
 
 /* ---- Awards ---- */
-.awards__slider {
-    width: 100%;
-    overflow: hidden;
-}
-
-.awards__track {
-    display: flex;
-    justify-content: center;   /* Center the cards */
-    align-items: center;
-    gap: 40px;
-}
-
-.award {
+.award img {
+    width: 350px;
+    height: 250px;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.awards .section-title {
-    margin-top: 60px;
-    margin-bottom: 50px;
-}
-
-.award img {
-    width: 350px;
-    height: auto;
-    display: block;
-}
 /* ---- Services ---- */
 .services {
   background: var(--maroon);
