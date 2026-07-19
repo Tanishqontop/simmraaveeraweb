@@ -617,108 +617,107 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.page-hero {
-  padding: 180px 0 120px;
-  text-align: center;
+.page-hero{
+padding:180px 0 120px;
+text-align:center;
 }
 
-.page-subtitle {
-  font-family: Montserrat;
-  letter-spacing: 6px;
-  font-size: 13px;
-  color: #c5a46d;
-  margin-bottom: 25px;
+.page-subtitle{
+font-family:Montserrat;
+letter-spacing:6px;
+font-size:13px;
+color:#C5A46D;
+margin-bottom:25px;
 }
 
-.page-title {
-  font-family: Cinzel;
-  font-size: 64px;
-  font-weight: 500;
-  color: #f7f1e7;
-  line-height: 1.15;
+.page-title{
+font-family:Cinzel;
+font-size:64px;
+font-weight:500;
+color:#F7F1E7;
+line-height:1.15;
 }
 
-.gold-line {
-  width: 120px;
-  height: 1px;
-  background: #c5a46d;
-  margin: 40px auto;
+.gold-line{
+width:120px;
+height:1px;
+background:#C5A46D;
+margin:40px auto;
 }
 
-.about-section {
-  padding: 110px 0;
+.about-section{
+padding:110px 0;
 }
 
-.narrow {
-  max-width: 900px;
+.narrow{
+max-width:900px;
 }
 
-.about-section h2 {
-  font-family: "Cinzel", serif;
-  font-size: 42px;
-  margin-bottom: 40px;
-  color: #f7f1e7;
-  text-align: center;
+.about-section h2{
+ font-family:Cinzel;
+    font-size:42px;
+    margin-bottom:40px;
+    color:#F7F1E7;
 }
 
-.about-section p {
-  font-family: Montserrat;
-  font-size: 18px;
-  line-height: 2;
-  color: #c5a46d;
+.about-section p{
+font-family:Montserrat;
+font-size:18px;
+line-height:2;
+color:#C5A46D;
 }
 
-.alt {
-  background: rgba(255, 255, 255, 0.02);
+.alt{
+background:rgba(255,255,255,.02);
 }
 
 .meaning-grid,
 .division-grid,
-.leaders {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  margin-top: 60px;
+.leaders{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:50px;
+margin-top:60px;
 }
 
 .meaning-card,
 .division,
-.leader {
-  padding: 40px;
-  border: 1px solid rgba(197, 164, 109, 0.2);
-  background: rgba(255, 255, 255, 0.02);
+.leader{
+padding:40px;
+border:1px solid rgba(197,164,109,.2);
+background:rgba(255,255,255,.02);
 }
 
 .meaning-card h3,
 .division h3,
-.leader h3 {
-  font-family: Cinzel;
-  margin-bottom: 20px;
-  color: #f7f1e7;
+.leader h3{
+font-family:Cinzel;
+margin-bottom:20px;
+color:#F7F1E7;
 }
 
-.center {
-  text-align: center;
+.center{
+text-align:center;
 }
 
-.center-text {
-  text-align: center;
-  max-width: 850px;
-  margin: 60px auto 0;
+.center-text{
+text-align:center;
+max-width:850px;
+margin:60px auto 0;
 }
 
-.closing {
-  padding: 160px 0;
-  text-align: center;
+.closing{
+padding:160px 0;
+text-align:center;
 }
 
-.closing blockquote {
-  font-family: Cinzel;
-  font-size: 44px;
-  max-width: 900px;
-  margin: auto;
-  color: #f7f1e7;
-  line-height: 1.5;
+.closing blockquote{
+font-family:Cinzel;
+font-size:44px;
+max-width:900px;
+margin:auto;
+color:#F7F1E7;
+line-height:1.5;
 }
 
 /* ============================================
