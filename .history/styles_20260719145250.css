@@ -182,7 +182,7 @@ a {
 
 .hero__title {
   font-family: "Cinzel", serif;
-  font-size: clamp(4rem, 3vw, 3rem);
+  font-size: clamp(3rem, 3vw, 3rem);
   font-weight: 500;
   line-height: 1.08;
   letter-spacing: -0.02em;
