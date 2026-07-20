@@ -169,11 +169,27 @@ a {
 /* ---- Hero ---- */
 .hero {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #5b1218;
+  background: var(--maroon);
+  padding-top: var(--header-height);
+  box-sizing: border-box;
+}
+
+/* Home page — single hero, no white sections */
+.home-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--maroon);
+}
+
+.home-page main {
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+  background: var(--maroon);
 }
 
 .hero__content {
