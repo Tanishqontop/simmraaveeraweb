@@ -865,6 +865,82 @@ a {
   }
 }
 
+/* ===================================================
+   Brand Content Pages (Nimma Setu, etc.)
+   =================================================== */
+
+.brand-page {
+  padding: calc(var(--header-height) + 4rem) 0 6rem;
+}
+
+.brand-content {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.brand-content__title {
+  font-family: "Cinzel", serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #f7f1e7;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.brand-content__subtitle {
+  font-family: "Cinzel", serif;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.brand-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.95rem, 1.6vw, 1rem);
+  line-height: 2;
+  color: var(--gold);
+  margin-bottom: 1.35rem;
+}
+
+.brand-content p:last-child {
+  margin-bottom: 0;
+}
+
+.brand-content__cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.brand-content__link {
+  font-weight: 600;
+  color: var(--gold-light);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.3s ease;
+}
+
+.brand-content__link:hover {
+  color: #f7f1e7;
+}
+
+@media (max-width: 768px) {
+  .brand-page {
+    padding: calc(var(--header-height) + 2.5rem) 0 4rem;
+  }
+
+  .brand-content__subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .brand-content p {
+    line-height: 1.9;
+  }
+}
+
 /* ============================================
    Responsive
    ============================================ */
