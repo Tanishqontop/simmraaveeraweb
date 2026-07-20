@@ -998,6 +998,131 @@ a {
   }
 }
 
+/* Contact page */
+
+.contact-page .brand-content__title {
+  margin-bottom: 3rem;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contact-list__label {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.95rem, 1.6vw, 1rem);
+  line-height: 1.8;
+  color: var(--gold);
+}
+
+.contact-list__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.95rem, 1.6vw, 1rem);
+  font-weight: 600;
+  color: var(--gold-light);
+  transition: color 0.3s ease;
+}
+
+.contact-list__link:hover {
+  color: #f7f1e7;
+}
+
+.contact-list__phones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-list__divider {
+  font-family: "Montserrat", sans-serif;
+  color: var(--gold);
+}
+
+.contact-page__copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.85rem, 1.4vw, 0.95rem);
+  line-height: 1.8;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 3rem !important;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.contact-social {
+  text-align: center;
+}
+
+.contact-social__title {
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  font-weight: 500;
+  color: #f7f1e7;
+  margin-bottom: 1.5rem;
+}
+
+.contact-social__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-social__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--gold);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-social__link svg {
+  width: 36px;
+  height: 36px;
+}
+
+.contact-social__link span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.contact-social__link:hover {
+  color: #f7f1e7;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .contact-page .brand-content__title {
+    margin-bottom: 2rem;
+  }
+
+  .contact-list {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-page__copyright {
+    margin-bottom: 2rem !important;
+  }
+
+  .contact-social__links {
+    gap: 1.5rem;
+  }
+}
+
 /* ============================================
    Responsive
    ============================================ */
