@@ -169,27 +169,11 @@ a {
 /* ---- Hero ---- */
 .hero {
   min-height: 100vh;
-  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--maroon);
-  padding-top: var(--header-height);
-  box-sizing: border-box;
-}
-
-/* Home page — single hero, no white sections */
-.home-page {
-  min-height: 100vh;
-  min-height: 100dvh;
-  background: var(--maroon);
-}
-
-.home-page main {
-  min-height: calc(100vh - var(--header-height));
-  min-height: calc(100dvh - var(--header-height));
-  background: var(--maroon);
+  background: #5b1218;
 }
 
 .hero__content {
@@ -737,406 +721,289 @@ a {
   line-height: 1.5;
 }
 
-/* ===================================================
-   Vision & Mission Page
-   =================================================== */
+/* Vision Mission Values */
 
-.vision-page {
-  padding: calc(var(--header-height) + 4rem) 0 6rem;
+/* ==========================================================
+   VISION & MISSION PAGE
+========================================================== */
+
+.vision-layout{
+    display:grid;
+    grid-template-columns:58% 42%;
+    gap:70px;
+    align-items:center;
 }
 
-.vision-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr);
-  gap: clamp(3rem, 6vw, 5rem);
-  align-items: start;
+.vision-text h2{
+    font-family:"Cinzel",serif;
+    font-size:42px;
+    color:#F7F1E7;
+    margin-bottom:35px;
 }
 
-.vision-content {
-  max-width: 720px;
+.vision-text h3{
+    font-family:"Cinzel",serif;
+    font-size:28px;
+    color:#F7F1E7;
+    margin-top:45px;
+    margin-bottom:18px;
 }
 
-.vision-content__title {
-  font-family: "Cinzel", serif;
-  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
-  font-weight: 500;
-  line-height: 1.3;
-  color: #f7f1e7;
-  margin-bottom: 2rem;
+.vision-text p{
+    font-family:"Montserrat",sans-serif;
+    font-size:18px;
+    line-height:2;
+    color:#D8C6A3;
+    margin-bottom:22px;
 }
 
-.vision-content p {
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.95rem, 1.6vw, 1rem);
-  line-height: 2;
-  color: var(--gold);
-  margin-bottom: 1.35rem;
+.vision-image{
+    display:flex;
+    justify-content:center;
 }
 
-.vision-content p:last-of-type {
-  margin-bottom: 0;
+.vision-image img{
+    width:100%;
+    max-width:470px;
+    border-radius:8px;
+    border:1px solid rgba(197,164,109,.30);
+    box-shadow:0 30px 80px rgba(0,0,0,.35);
+    transition:.4s ease;
 }
 
-.vision-content strong {
-  font-weight: 600;
-  color: var(--gold);
+.vision-image img:hover{
+    transform:translateY(-8px);
 }
 
-.signature-block {
-  margin-top: 3rem;
+
+/* ==========================
+   VISION & MISSION CARDS
+========================== */
+
+.division-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-top:60px;
+
 }
 
-.signature-greeting {
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.95rem, 1.6vw, 1rem);
-  line-height: 2;
-  color: var(--gold);
-  margin-bottom: 1rem;
+.division{
+
+    padding:45px 35px;
+
+    border:1px solid rgba(197,164,109,.25);
+
+    background:rgba(255,255,255,.03);
+
+    transition:.35s;
+
+    text-align:center;
+
 }
 
-.signature-name {
-  font-family: "Cinzel", serif;
-  font-size: clamp(1.5rem, 3vw, 1.875rem);
-  font-weight: 500;
-  color: #f7f1e7;
-  margin-bottom: 0.5rem;
+.division:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C5A46D;
+
+    background:rgba(255,255,255,.05);
+
 }
 
-.signature-role,
-.signature-company {
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
-  color: var(--gold);
-  line-height: 1.6;
+.division h3{
+
+    font-family:"Cinzel",serif;
+
+    color:#F7F1E7;
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
 }
 
-.vision-image {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0;
+.division p{
+
+    font-family:"Montserrat",sans-serif;
+
+    color:#D8C6A3;
+
+    line-height:1.9;
+
+    font-size:17px;
+
 }
 
-.vision-image img {
-  width: 100%;
-  max-width: 340px;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 10px;
-  border: 1px solid rgba(197, 160, 89, 0.25);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
-  transition: transform 0.35s ease;
+
+/* ==========================
+   CENTER PARAGRAPHS
+========================== */
+
+.center-text{
+
+    max-width:900px;
+
+    margin:50px auto 0;
+
+    text-align:center;
+
+    font-family:"Montserrat",sans-serif;
+
+    color:#D8C6A3;
+
+    line-height:2;
+
+    font-size:19px;
+
 }
 
-.vision-image img:hover {
-  transform: translateY(-6px);
+
+/* ==========================
+   QUOTE SECTION
+========================== */
+
+.closing{
+
+    padding:150px 0;
+
+    text-align:center;
+
 }
 
-.nav__link--active::after {
-  width: 100%;
+.closing blockquote{
+
+    font-family:"Cinzel",serif;
+
+    font-size:52px;
+
+    line-height:1.4;
+
+    color:#F7F1E7;
+
+    max-width:900px;
+
+    margin:auto;
+
 }
 
-@media (max-width: 900px) {
-  .vision-layout {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
+.quote-caption{
 
-  .vision-content {
-    max-width: 100%;
-  }
+    margin-top:35px;
 
-  .vision-content__title {
-    text-align: center;
-  }
+    font-family:"Montserrat",sans-serif;
 
-  .vision-image {
-    order: 2;
-  }
+    color:#C5A46D;
 
-  .vision-image img {
-    max-width: 320px;
-    margin-inline: auto;
-  }
+    font-size:18px;
+
+    line-height:2;
+
 }
 
-@media (max-width: 768px) {
-  .vision-page {
-    padding: calc(var(--header-height) + 2.5rem) 0 4rem;
-  }
 
-  .vision-content p,
-  .signature-greeting {
-    line-height: 1.9;
-  }
+/* ==========================
+   SIGNATURE
+========================== */
 
-  .signature-block {
-    text-align: center;
-  }
+.signature-section{
 
-  .vision-image img {
-    max-width: 280px;
-  }
+    text-align:center;
+
+    padding:120px 0;
+
 }
 
-/* ===================================================
-   Brand Content Pages (Nimma Setu, etc.)
-   =================================================== */
+.signature-section h2{
 
-.brand-page {
-  padding: calc(var(--header-height) + 4rem) 0 6rem;
+    font-family:"Cinzel",serif;
+
+    font-size:40px;
+
+    color:#F7F1E7;
+
+    margin:20px 0 10px;
+
 }
 
-.brand-content {
-  max-width: 900px;
-  margin-inline: auto;
+.signature-section p{
+
+    font-family:"Montserrat",sans-serif;
+
+    color:#C5A46D;
+
+    line-height:1.8;
+
 }
 
-.brand-content__title {
-  font-family: "Cinzel", serif;
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 500;
-  line-height: 1.2;
-  color: #f7f1e7;
-  text-align: center;
-  margin-bottom: 0.75rem;
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1100px){
+
+    .vision-layout{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+    .vision-image{
+
+        order:-1;
+
+    }
+
+    .division-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
 }
 
-.brand-content__subtitle {
-  font-family: "Cinzel", serif;
-  font-size: clamp(1rem, 2.2vw, 1.25rem);
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: var(--gold);
-  text-align: center;
-  margin-bottom: 3rem;
-}
+@media(max-width:768px){
 
-.brand-content p {
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.95rem, 1.6vw, 1rem);
-  line-height: 2;
-  color: var(--gold);
-  margin-bottom: 1.35rem;
-}
+    .vision-text h2{
 
-.brand-content p:last-child {
-  margin-bottom: 0;
-}
+        font-size:34px;
 
-.brand-content__cta {
-  margin-top: 2rem;
-  text-align: center;
-}
+        text-align:center;
 
-.brand-content__link {
-  font-weight: 600;
-  color: var(--gold-light);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: color 0.3s ease;
-}
+    }
 
-.brand-content__link:hover {
-  color: #f7f1e7;
-}
+    .vision-text h3{
 
-@media (max-width: 768px) {
-  .brand-page {
-    padding: calc(var(--header-height) + 2.5rem) 0 4rem;
-  }
+        font-size:24px;
 
-  .brand-content__subtitle {
-    margin-bottom: 2rem;
-  }
+    }
 
-  .brand-content p {
-    line-height: 1.9;
-  }
-}
+    .vision-text p{
 
-/* Services page */
+        font-size:16px;
 
-.services-page .brand-content__title {
-  margin-bottom: 3rem;
-}
+    }
 
-.services-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
+    .closing blockquote{
 
-.service-item {
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
-}
+        font-size:34px;
 
-.service-item:last-child {
-  padding-bottom: 0;
-  border-bottom: none;
-}
+    }
 
-.service-item__title {
-  font-family: "Cinzel", serif;
-  font-size: clamp(1.05rem, 2vw, 1.2rem);
-  font-weight: 500;
-  line-height: 1.4;
-  color: #f7f1e7;
-  margin-bottom: 0.85rem;
-}
+    .center-text{
 
-.service-item p {
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.95rem, 1.6vw, 1rem);
-  line-height: 2;
-  color: var(--gold);
-  margin: 0;
-}
+        font-size:17px;
 
-@media (max-width: 768px) {
-  .services-page .brand-content__title {
-    margin-bottom: 2rem;
-  }
+    }
 
-  .services-list {
-    gap: 2rem;
-  }
-
-  .service-item {
-    padding-bottom: 2rem;
-  }
-
-  .service-item p {
-    line-height: 1.9;
-  }
-}
-
-/* Contact page */
-
-.contact-page .brand-content__title {
-  margin-bottom: 3rem;
-}
-
-.contact-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.contact-list__item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.contact-list__label {
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.95rem, 1.6vw, 1rem);
-  line-height: 1.8;
-  color: var(--gold);
-}
-
-.contact-list__link {
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.95rem, 1.6vw, 1rem);
-  font-weight: 600;
-  color: var(--gold-light);
-  transition: color 0.3s ease;
-}
-
-.contact-list__link:hover {
-  color: #f7f1e7;
-}
-
-.contact-list__phones {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.contact-list__divider {
-  font-family: "Montserrat", sans-serif;
-  color: var(--gold);
-}
-
-.contact-page__copyright {
-  font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.85rem, 1.4vw, 0.95rem);
-  line-height: 1.8;
-  color: var(--gold);
-  text-align: center;
-  margin-bottom: 3rem !important;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(197, 160, 89, 0.2);
-}
-
-.contact-social {
-  text-align: center;
-}
-
-.contact-social__title {
-  font-family: "Cinzel", serif;
-  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
-  font-weight: 500;
-  color: #f7f1e7;
-  margin-bottom: 1.5rem;
-}
-
-.contact-social__links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.contact-social__link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.65rem;
-  color: var(--gold);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.contact-social__link svg {
-  width: 36px;
-  height: 36px;
-}
-
-.contact-social__link span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.04em;
-}
-
-.contact-social__link:hover {
-  color: #f7f1e7;
-  transform: translateY(-3px);
-}
-
-@media (max-width: 768px) {
-  .contact-page .brand-content__title {
-    margin-bottom: 2rem;
-  }
-
-  .contact-list {
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .contact-page__copyright {
-    margin-bottom: 2rem !important;
-  }
-
-  .contact-social__links {
-    gap: 1.5rem;
-  }
 }
 
 /* ============================================
