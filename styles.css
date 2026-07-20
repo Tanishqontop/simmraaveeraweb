@@ -721,6 +721,386 @@ a {
   line-height: 1.5;
 }
 
+/* Vision Mission Values */
+
+/* ===================================================
+   MANAGING DIRECTOR'S VISION PAGE
+=================================================== */
+
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:1100px){
+
+    .vision-layout{
+
+        grid-template-columns:1fr;
+        gap:60px;
+
+    }
+
+    .vision-image{
+
+       display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+
+    }
+
+    .vision-image img{
+
+        width:100%;
+    max-width:360px;
+    aspect-ratio:3/4;
+    object-fit:cover;
+    object-position:center top;
+    border-radius:6px;
+    border:1px solid rgba(197,164,109,.25);
+    box-shadow:0 25px 70px rgba(0,0,0,.35);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .vision-page{
+
+        padding:130px 0 80px;
+
+    }
+
+    .vision-content h1{
+
+        font-size:38px;
+        text-align:center;
+
+    }
+
+    .vision-content h2{
+
+        font-size:24px;
+
+    }
+
+    .vision-content p{
+
+        font-size:16px;
+        line-height:1.9;
+
+    }
+
+    .signature-block{
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* =====================================================
+   MANAGING DIRECTOR'S VISION PAGE
+===================================================== */
+
+.vision-page{
+    padding:140px 0 100px;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.vision-layout{
+
+    display:grid;
+
+    grid-template-columns:1.6fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+/* ===========================
+   LEFT COLUMN
+=========================== */
+
+.vision-content{
+
+    max-width:700px;
+
+}
+
+.vision-label{
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:12px;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#C5A46D;
+
+    margin-bottom:18px;
+
+}
+
+.vision-content h1{
+
+    font-family:"Cinzel",serif;
+
+    font-size:36px;
+
+    font-weight:500;
+
+    line-height:1.25;
+
+    color:#F7F1E7;
+
+    margin-bottom:32px;
+
+}
+
+.vision-content h2{
+
+    font-family:"Cinzel",serif;
+
+    font-size:24px;
+
+    font-weight:500;
+
+    color:#F7F1E7;
+
+    margin-top:40px;
+
+    margin-bottom:18px;
+
+}
+
+.vision-content p{
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:16px;
+
+    line-height:2;
+
+    color:#D5BE90;
+
+    margin-bottom:22px;
+
+}
+
+.vision-content strong{
+
+    color:#F7F1E7;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   SIGNATURE
+=========================== */
+
+.signature-block{
+
+    margin-top:55px;
+
+}
+
+.signature-greeting{
+
+    margin-bottom:18px;
+
+}
+
+.signature-block h3{
+
+    font-family:"Cinzel",serif;
+
+    font-size:30px;
+
+    color:#F7F1E7;
+
+    font-weight:500;
+
+    margin-bottom:8px;
+
+}
+
+.signature-block span{
+
+    display:block;
+
+    color:#C5A46D;
+
+    font-family:"Montserrat",sans-serif;
+
+    margin-bottom:5px;
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.vision-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.vision-image img{
+
+    width:340px;
+
+    height:460px;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+    border-radius:10px;
+
+    border:1px solid rgba(197,164,109,.25);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+    transition:.35s ease;
+
+}
+
+.vision-image img:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    background:#4A1423;
+
+    text-align:center;
+
+    padding:40px 0;
+
+}
+
+.footer p{
+
+    font-family:"Montserrat",sans-serif;
+
+    color:#C5A46D;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+    .vision-layout{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+    .vision-image{
+
+        order:-1;
+
+    }
+
+    .vision-image img{
+
+        width:320px;
+
+        height:430px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .vision-page{
+
+        padding:120px 0 80px;
+
+    }
+
+    .vision-content{
+
+        max-width:100%;
+
+    }
+
+    .vision-content h1{
+
+        font-size:30px;
+
+        text-align:center;
+
+    }
+
+    .vision-label{
+
+        text-align:center;
+
+    }
+
+    .vision-content h2{
+
+        font-size:22px;
+
+    }
+
+    .vision-content p{
+
+        font-size:15px;
+
+        line-height:1.9;
+
+    }
+
+    .signature-block{
+
+        text-align:center;
+
+    }
+
+    .vision-image img{
+
+        width:280px;
+
+        height:380px;
+
+    }
+
+}
+
 /* ============================================
    Responsive
    ============================================ */
