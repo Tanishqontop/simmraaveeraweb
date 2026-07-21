@@ -156,7 +156,7 @@ if (document.querySelector('.services__grid')) {
 }
 
 /* ---- Parallax on hero (only when page scrolls beyond hero) ---- */
-if (document.querySelector('.strategy') || document.querySelector('.about')) {
+if (document.querySelector('.home-section') || document.querySelector('.about-section')) {
   gsap.to('.hero__content', {
     y: -80,
     ease: 'none',

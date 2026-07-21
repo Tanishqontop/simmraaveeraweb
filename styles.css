@@ -179,17 +179,58 @@ a {
   box-sizing: border-box;
 }
 
-/* Home page — single hero, no white sections */
+/* Home page — single hero, scrollable sections below */
 .home-page {
-  min-height: 100vh;
-  min-height: 100dvh;
   background: var(--maroon);
 }
 
 .home-page main {
-  min-height: calc(100vh - var(--header-height));
-  min-height: calc(100dvh - var(--header-height));
   background: var(--maroon);
+}
+
+.home-section {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.home-section__title {
+  font-family: "Cinzel", serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 500;
+  color: #f7f1e7;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home-page .page-hero {
+  padding: calc(var(--header-height) + 4rem) 0 4rem;
+}
+
+.home-page .vision-page {
+  padding: 5rem 0;
+}
+
+.home-page .brand-page {
+  padding: 5rem 0;
+}
+
+.home-page .vision-content__title {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+}
+
+.home-page .signature-name {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+@media (max-width: 900px) {
+  .meaning-grid,
+  .leaders,
+  .division-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
 }
 
 .hero__content {
