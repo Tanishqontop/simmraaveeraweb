@@ -723,6 +723,68 @@ a {
   margin: 60px auto 0;
 }
 
+.about-section__lead {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.about-section a {
+  color: var(--gold-light);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.3s ease;
+}
+
+.about-section a:hover {
+  color: #f7f1e7;
+}
+
+.about-divisions {
+  list-style: none;
+  counter-reset: division;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.about-divisions__item {
+  counter-increment: division;
+  padding: 2rem;
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.about-divisions__item h3 {
+  font-family: Cinzel, serif;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: #f7f1e7;
+  margin-bottom: 1rem;
+}
+
+.about-divisions__item h3::before {
+  content: counter(division) ". ";
+  color: var(--gold);
+}
+
+.about-divisions__item p {
+  margin-bottom: 0;
+}
+
+.about-divisions__cta {
+  margin-top: 1.25rem !important;
+}
+
+.leader span {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  letter-spacing: 0.06em;
+}
+
 .closing {
   padding: 160px 0;
   text-align: center;
