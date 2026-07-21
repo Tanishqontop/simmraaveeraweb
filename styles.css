@@ -17,7 +17,7 @@
   --font-serif: "Cinzel", Georgia, serif;
   --font-sans: "Lato", system-ui, sans-serif;
 
-  --header-height: 72px;
+  --header-height: 88px;
   --container-max: 1200px;
   --section-pad: clamp(4rem, 8vw, 7rem);
 }
@@ -91,7 +91,7 @@ a {
 }
 
 .logo__img {
-  height: 70px; /* Adjust if needed */
+  height: 80px;
   width: auto;
   display: block;
 }
@@ -299,20 +299,23 @@ a {
 
 .hero__title {
   font-family: "Cinzel", serif;
-  font-size: clamp(4rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: 500;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
   color: var(--gold);
   margin-bottom: 12px;
-  white-space: nowrap;
   text-transform: none;
+  padding-inline: 0.5rem;
 }
 
 .hero__tagline {
-  font-size: 1.05rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.8rem, 2.5vw, 1.05rem);
   letter-spacing: 0.04em;
+  line-height: 1.6;
   color: var(--gold);
+  padding-inline: 1rem;
 }
 
 .hero__scroll-hint {
@@ -1353,9 +1356,10 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .nav-toggle {
     display: flex;
+    z-index: 1001;
   }
 
   .nav {
@@ -1363,14 +1367,17 @@ a {
     top: var(--header-height);
     left: 0;
     right: 0;
+    bottom: 0;
     background: rgba(74, 14, 28, 0.98);
     backdrop-filter: blur(12px);
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    gap: 1.5rem;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem 3rem;
+    gap: 1.25rem;
     transform: translateY(-120%);
     opacity: 0;
+    overflow-y: auto;
     transition:
       transform 0.4s ease,
       opacity 0.4s ease;
@@ -1384,6 +1391,168 @@ a {
   }
 
   .nav__link {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  body.nav-open {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .container {
+    width: min(var(--container-max), 100% - 1.5rem);
+  }
+
+  .logo__img {
+    height: 58px;
+  }
+
+  .header--scrolled,
+  .header {
+    background: rgba(74, 14, 28, 0.98);
+  }
+
+  .hero {
+    min-height: 100svh;
+    padding-inline: 0.25rem;
+  }
+
+  .hero__title {
+    font-size: clamp(1.25rem, 6vw, 1.85rem);
+  }
+
+  .hero__tagline {
+    font-size: clamp(0.72rem, 2.8vw, 0.9rem);
+  }
+
+  .page-hero {
+    padding: calc(var(--header-height) + 1.5rem) 0 1.5rem;
+  }
+
+  .page-title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .gold-line {
+    margin: 0.75rem auto 0;
+  }
+
+  .about-section {
+    padding: 2rem 0;
+  }
+
+  .about-section h2 {
+    font-size: clamp(1.25rem, 5vw, 1.65rem);
+    margin-bottom: 1rem;
+  }
+
+  .about-section p {
+    font-size: 0.92rem;
+    line-height: 1.85;
+  }
+
+  .meaning-grid,
+  .leaders,
+  .division-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .meaning-card,
+  .leader,
+  .division,
+  .about-divisions__item {
+    padding: 1.25rem;
+  }
+
+  .center-text {
+    margin-top: 1.5rem;
+  }
+
+  .home-page .page-hero {
+    padding: calc(var(--header-height) + 1rem) 0 0.75rem;
+  }
+
+  .home-page .vision-page,
+  .home-page .brand-page {
+    padding: 2.5rem 0;
+  }
+
+  .home-page .home-section__title,
+  .brand-content__title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .brand-content__subtitle {
+    font-size: clamp(0.9rem, 3.5vw, 1.05rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .brand-content p,
+  .vision-content p {
+    font-size: 0.92rem;
+    line-height: 1.85;
+  }
+
+  .vision-page,
+  .brand-page {
+    padding: calc(var(--header-height) + 1.5rem) 0 2.5rem;
+  }
+
+  .vision-layout {
+    gap: 2rem;
+  }
+
+  .vision-content__title {
+    font-size: clamp(1.2rem, 4.5vw, 1.5rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .vision-image img {
+    max-width: min(280px, 85vw);
+  }
+
+  .services-list {
+    gap: 1.5rem;
+  }
+
+  .service-item {
+    padding-bottom: 1.5rem;
+  }
+
+  .service-item__title {
+    font-size: clamp(1rem, 3.5vw, 1.1rem);
+  }
+
+  .contact-list {
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-list__label,
+  .contact-list__link {
+    font-size: 0.92rem;
+  }
+
+  .contact-social__links {
+    gap: 1.25rem;
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+    padding-inline: 0.5rem;
   }
 }
