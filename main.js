@@ -20,6 +20,7 @@ if (navToggle && nav) {
     const open = nav.classList.toggle('nav--open');
     navToggle.classList.toggle('nav-toggle--open', open);
     navToggle.setAttribute('aria-expanded', open);
+    document.body.classList.toggle('nav-open', open);
   });
 
   nav.querySelectorAll('.nav__link').forEach((link) => {
@@ -27,6 +28,7 @@ if (navToggle && nav) {
       nav.classList.remove('nav--open');
       navToggle.classList.remove('nav-toggle--open');
       navToggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
     });
   });
 }
