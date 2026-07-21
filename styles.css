@@ -179,17 +179,118 @@ a {
   box-sizing: border-box;
 }
 
-/* Home page — single hero, no white sections */
+/* Home page — single hero, scrollable sections below */
 .home-page {
-  min-height: 100vh;
-  min-height: 100dvh;
   background: var(--maroon);
 }
 
 .home-page main {
-  min-height: calc(100vh - var(--header-height));
-  min-height: calc(100dvh - var(--header-height));
   background: var(--maroon);
+}
+
+.home-section {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.home-section__title {
+  font-family: "Cinzel", serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 500;
+  color: #f7f1e7;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home-page .page-hero {
+  padding: calc(var(--header-height) + 1.5rem) 0 1rem;
+}
+
+.home-page .gold-line {
+  margin: 1rem auto 0;
+}
+
+.home-page .page-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.home-page .about-section {
+  padding: 1.75rem 0;
+}
+
+.home-page .page-hero + .about-section {
+  padding-top: 0.5rem;
+}
+
+.home-page .about-section + .about-section {
+  padding-top: 1rem;
+}
+
+.home-page .about-section h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1.25rem;
+}
+
+.home-page .about-section p {
+  font-size: clamp(0.95rem, 1.6vw, 1rem);
+  line-height: 1.85;
+}
+
+.home-page .about-section__lead {
+  margin-bottom: 1.25rem;
+}
+
+.home-page .center-text {
+  margin: 1.5rem auto 0;
+}
+
+.home-page .meaning-grid,
+.home-page .leaders,
+.home-page .division-grid {
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+
+.home-page .meaning-card,
+.home-page .leader,
+.home-page .division {
+  padding: 1.5rem;
+}
+
+.home-page .about-divisions {
+  margin-top: 1.25rem;
+  gap: 1.5rem;
+}
+
+.home-page .vision-page {
+  padding: 3rem 0;
+}
+
+.home-page .brand-page {
+  padding: 3rem 0;
+}
+
+.home-page .home-section__title {
+  margin-bottom: 2rem;
+}
+
+.home-page .vision-content__title {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+}
+
+.home-page .signature-name {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+@media (max-width: 900px) {
+  .meaning-grid,
+  .leaders,
+  .division-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
 }
 
 .hero__content {
