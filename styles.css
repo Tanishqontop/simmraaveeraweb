@@ -4,8 +4,8 @@
 
 :root {
   --maroon: #5b1218;
-  --maroon-dark: #4a0e1c;
-  --maroon-deep: #3a0a15;
+  --maroon-dark: #5b1218;
+  --maroon-deep: #5b1218;
   --gold: #c5a059;
   --gold-light: #d4b87a;
   --white: #ffffff;
@@ -33,6 +33,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  background: var(--maroon);
 }
 
 body {
@@ -42,6 +43,10 @@ body {
   color: var(--white);
   background: var(--maroon);
   overflow-x: hidden;
+}
+
+main {
+  background: var(--maroon);
 }
 
 img {
@@ -73,7 +78,7 @@ a {
 }
 
 .header--scrolled {
-  background: rgba(74, 14, 28, 0.95);
+  background: var(--maroon);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
 }
@@ -190,6 +195,7 @@ a {
 
 .home-section {
   scroll-margin-top: calc(var(--header-height) + 1rem);
+  background: var(--maroon);
 }
 
 .home-section__title {
@@ -219,6 +225,11 @@ a {
 
 .home-page .page-hero + .about-section {
   padding-top: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.home-page .page-hero + .about-section + .about-section {
+  padding-top: 3rem;
 }
 
 .home-page .about-section + .about-section {
@@ -355,7 +366,7 @@ a {
 
 /* ---- Strategy ---- */
 .strategy {
-  background: var(--white);
+  background: var(--maroon);
   color: var(--text-dark);
   padding: var(--section-pad) 0;
 }
@@ -740,6 +751,7 @@ a {
 .page-hero {
   padding: 180px 0 120px;
   text-align: center;
+  background: var(--maroon);
 }
 
 .page-subtitle {
@@ -767,6 +779,7 @@ a {
 
 .about-section {
   padding: 110px 0;
+  background: var(--maroon);
 }
 
 .narrow {
@@ -789,7 +802,7 @@ a {
 }
 
 .alt {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--maroon);
 }
 
 .meaning-grid,
@@ -806,7 +819,7 @@ a {
 .leader {
   padding: 40px;
   border: 1px solid rgba(197, 164, 109, 0.2);
-  background: rgba(255, 255, 255, 0.02);
+  background: transparent;
 }
 
 .meaning-card h3,
@@ -857,7 +870,7 @@ a {
   counter-increment: division;
   padding: 2rem;
   border: 1px solid rgba(197, 160, 89, 0.2);
-  background: rgba(255, 255, 255, 0.02);
+  background: transparent;
 }
 
 .about-divisions__item h3 {
@@ -909,6 +922,7 @@ a {
 
 .vision-page {
   padding: calc(var(--header-height) + 4rem) 0 6rem;
+  background: var(--maroon);
 }
 
 .vision-layout {
@@ -1053,6 +1067,7 @@ a {
 
 .brand-page {
   padding: calc(var(--header-height) + 4rem) 0 6rem;
+  background: var(--maroon);
 }
 
 .brand-content {
@@ -1191,7 +1206,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact-list__item {
@@ -1237,7 +1252,8 @@ a {
   line-height: 1.8;
   color: var(--gold);
   text-align: center;
-  margin-bottom: 3rem !important;
+  margin-top: 2.5rem;
+  margin-bottom: 0 !important;
   padding-top: 2rem;
   border-top: 1px solid rgba(197, 160, 89, 0.2);
 }
@@ -1297,7 +1313,7 @@ a {
   }
 
   .contact-page__copyright {
-    margin-bottom: 2rem !important;
+    margin-top: 2rem;
   }
 
   .contact-social__links {
@@ -1368,7 +1384,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(74, 14, 28, 0.98);
+    background: var(--maroon);
     backdrop-filter: blur(12px);
     flex-direction: column;
     align-items: center;
@@ -1416,7 +1432,7 @@ a {
 
   .header--scrolled,
   .header {
-    background: rgba(74, 14, 28, 0.98);
+    background: var(--maroon);
   }
 
   .hero {
